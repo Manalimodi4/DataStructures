@@ -16,10 +16,11 @@ public class DeletingLastArrayElement {
         for (int i = 0; i < size; i++) {
             System.out.println(a[i]);
         }
-        size--;
         System.out.println("After deleting from last position:");
-        for (int i = 0; i < size; i++) {
-            System.out.println(a[i]);
+        int b[] = new int[size-1];
+        for (int i = 0; i < size-1; i++) {
+            b[i]=a[i];
+            System.out.println(b[i]);
         }
     }
 }
